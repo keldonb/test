@@ -552,6 +552,32 @@
   color: var(--color-text-secondary);
 }
 
+a.timeline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a.timeline-link:hover {
+  text-decoration: underline;
+}
+
+.document-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.document-link:hover {
+  text-decoration: underline;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .detail-grid {

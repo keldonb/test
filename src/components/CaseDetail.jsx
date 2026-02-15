@@ -8,6 +8,7 @@ import {
   CheckCircle2,
   Clock,
   StickyNote,
+  ExternalLink,
 } from "lucide-react";
 import StatusBadge from "./StatusBadge";
 import Timeline from "./Timeline";
@@ -113,7 +114,21 @@ function CaseDetail({ caseData, onBack }) {
           </h3>
           <ul>
             {caseData.documents.map((d, i) => (
-              <li key={i}>{d}</li>
+              <li key={i}>
+                {d.url ? (
+                  <a
+                    href={d.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="document-link"
+                  >
+                    {d.name}
+                    <ExternalLink size={12} />
+                  </a>
+                ) : (
+                  typeof d === "string" ? d : d.name
+                )}
+              </li>
             ))}
           </ul>
         </section>

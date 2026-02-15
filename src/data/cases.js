@@ -19,10 +19,10 @@ const cases = [
       "Harm to advertisers through supracompetitive pricing",
     ],
     keyDates: [
-      { date: "2020-10-20", event: "DOJ files complaint" },
+      { date: "2020-10-20", event: "DOJ files complaint", url: "https://www.justice.gov/archives/opa/pr/justice-department-sues-monopolist-google-violating-antitrust-laws" },
       { date: "2023-09-12", event: "Trial begins (U.S. District Court, D.C.)" },
-      { date: "2024-08-05", event: "Judge Mehta rules Google is a monopolist" },
-      { date: "2025-04-00", event: "Remedies phase trial (estimated)" },
+      { date: "2024-08-05", event: "Judge Mehta rules Google is a monopolist", url: "https://www.justice.gov/opa/pr/department-justice-prevails-landmark-antitrust-case-against-google" },
+      { date: "2025-04-00", event: "Remedies phase trial (estimated)", url: "https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google" },
     ],
     nextSteps: [
       {
@@ -35,8 +35,8 @@ const cases = [
       },
     ],
     documents: [
-      "Complaint (Oct 2020)",
-      "Findings of Fact & Conclusions of Law (Aug 2024)",
+      { name: "Complaint (Oct 2020)", url: "https://www.justice.gov/atr/case/us-and-plaintiff-states-v-google-llc" },
+      { name: "Findings of Fact & Conclusions of Law (Aug 2024)", url: "https://www.justice.gov/opa/pr/department-justice-prevails-landmark-antitrust-case-against-google" },
     ],
     notes:
       "DOJ has proposed remedies including divestiture of Chrome and restrictions on default agreements. Google has strongly contested the proposed remedies.",
@@ -58,7 +58,7 @@ const cases = [
       "Conflicts of interest operating on both buy-side and sell-side",
     ],
     keyDates: [
-      { date: "2023-01-24", event: "DOJ files complaint (E.D. Va.)" },
+      { date: "2023-01-24", event: "DOJ files complaint (E.D. Va.)", url: "https://www.justice.gov/archives/opa/pr/justice-department-sues-google-monopolizing-digital-advertising-technologies" },
       { date: "2024-09-09", event: "Trial begins before Judge Brinkema" },
       { date: "2024-11-00", event: "Closing arguments" },
     ],
@@ -72,7 +72,7 @@ const cases = [
         date: null,
       },
     ],
-    documents: ["Complaint (Jan 2023)"],
+    documents: [{ name: "Complaint (Jan 2023)", url: "https://www.justice.gov/atr/case/us-and-plaintiff-states-v-google-llc-2023" }],
     notes:
       "Virginia AG and several state AGs joined the DOJ. Google argues the ad tech market is competitive and that its integrated offering benefits advertisers and publishers.",
   },
@@ -93,15 +93,15 @@ const cases = [
     ],
     keyDates: [
       { date: "2010-11-30", event: "Formal investigation opened" },
-      { date: "2017-06-27", event: "Commission issues €2.42B fine" },
+      { date: "2017-06-27", event: "Commission issues €2.42B fine", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_17_1784" },
       { date: "2021-11-10", event: "General Court largely upholds decision" },
       { date: "2024-09-10", event: "CJEU upholds fine on appeal" },
     ],
     nextSteps: [],
     documents: [
-      "Commission Decision (Jun 2017)",
-      "General Court Judgment (Nov 2021)",
-      "CJEU Judgment (Sep 2024)",
+      { name: "Commission Decision (Jun 2017)", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_17_1784" },
+      { name: "General Court Judgment (Nov 2021)" },
+      { name: "CJEU Judgment (Sep 2024)" },
     ],
     notes:
       "Landmark self-preferencing case. Google implemented a compliance mechanism (auction-based shopping unit) but its effectiveness remains debated.",
@@ -124,7 +124,7 @@ const cases = [
       "Imposing anticompetitive App Store terms",
     ],
     keyDates: [
-      { date: "2024-03-21", event: "DOJ and 16 state AGs file complaint (D.N.J.)" },
+      { date: "2024-03-21", event: "DOJ and 16 state AGs file complaint (D.N.J.)", url: "https://www.justice.gov/archives/opa/pr/justice-department-sues-apple-monopolizing-smartphone-markets" },
       { date: "2025-01-00", event: "Apple's motion to dismiss partially denied" },
     ],
     nextSteps: [
@@ -137,7 +137,7 @@ const cases = [
         date: null,
       },
     ],
-    documents: ["Complaint (Mar 2024)"],
+    documents: [{ name: "Complaint (Mar 2024)", url: "https://www.justice.gov/atr/case/us-and-plaintiff-states-v-apple-inc" }],
     notes:
       "Broad case targeting Apple's entire ecosystem strategy. Apple argues its restrictions improve security, privacy, and user experience.",
   },
@@ -157,8 +157,8 @@ const cases = [
       "Excessive commission fees on in-app purchases",
     ],
     keyDates: [
-      { date: "2020-06-16", event: "Statement of Objections issued" },
-      { date: "2024-03-04", event: "Commission fines Apple €1.84B" },
+      { date: "2020-06-16", event: "Statement of Objections issued", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_20_1073" },
+      { date: "2024-03-04", event: "Commission fines Apple €1.84B", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_1161" },
       { date: "2024-05-00", event: "Apple appeals to General Court" },
     ],
     nextSteps: [
@@ -168,8 +168,8 @@ const cases = [
       },
     ],
     documents: [
-      "Statement of Objections (Jun 2020)",
-      "Commission Decision (Mar 2024)",
+      { name: "Statement of Objections (Jun 2020)", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_20_1073" },
+      { name: "Commission Decision (Mar 2024)", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_1161" },
     ],
     notes:
       "Decided under the Digital Markets Act as well. Apple has also been designated as a gatekeeper under the DMA with separate compliance obligations.",
@@ -190,7 +190,7 @@ const cases = [
       "Monopoly maintenance in personal social networking services",
     ],
     keyDates: [
-      { date: "2020-12-09", event: "FTC files complaint" },
+      { date: "2020-12-09", event: "FTC files complaint", url: "https://www.ftc.gov/news-events/news/press-releases/2020/12/ftc-sues-facebook-illegal-monopolization" },
       { date: "2021-06-28", event: "Initial complaint dismissed; FTC refiles" },
       { date: "2022-01-11", event: "Amended complaint survives motion to dismiss" },
       { date: "2025-04-14", event: "Trial scheduled to begin" },
@@ -206,8 +206,8 @@ const cases = [
       },
     ],
     documents: [
-      "Original Complaint (Dec 2020)",
-      "Amended Complaint (Aug 2021)",
+      { name: "Original Complaint (Dec 2020)", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/191-0134-facebook-inc-ftc-v-ftc-v-meta-platforms-inc" },
+      { name: "Amended Complaint (Aug 2021)", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/191-0134-facebook-inc-ftc-v-ftc-v-meta-platforms-inc" },
     ],
     notes:
       "One of the most significant tech antitrust cases. The FTC must prove that personal social networking is a relevant market and that the acquisitions were anticompetitive — years after they were approved.",
@@ -228,16 +228,16 @@ const cases = [
       "Strengthening dominance in gaming ecosystems",
     ],
     keyDates: [
-      { date: "2022-07-06", event: "CMA opens Phase 1 investigation" },
-      { date: "2023-04-26", event: "CMA blocks the deal" },
-      { date: "2023-08-22", event: "Microsoft restructures deal (cloud rights to Ubisoft)" },
-      { date: "2023-10-13", event: "CMA approves restructured deal" },
+      { date: "2022-07-06", event: "CMA opens Phase 1 investigation", url: "https://www.gov.uk/cma-cases/microsoft-slash-activision-blizzard-merger-inquiry" },
+      { date: "2023-04-26", event: "CMA blocks the deal", url: "https://www.gov.uk/government/news/microsoft-activision-deal-prevented-to-protect-innovation-and-choice-in-cloud-gaming" },
+      { date: "2023-08-22", event: "Microsoft restructures deal (cloud rights to Ubisoft)", url: "https://www.gov.uk/government/news/microsoft-submits-new-deal-for-review-after-cma-confirms-original-deal-is-blocked" },
+      { date: "2023-10-13", event: "CMA approves restructured deal", url: "https://www.gov.uk/government/news/new-microsoft-activision-deal-addresses-previous-cma-concerns-in-cloud-gaming" },
     ],
     nextSteps: [],
     documents: [
-      "Phase 1 Decision",
-      "Phase 2 Final Report (Apr 2023)",
-      "Restructured Deal Approval (Oct 2023)",
+      { name: "Phase 1 Decision", url: "https://www.gov.uk/cma-cases/microsoft-slash-activision-blizzard-merger-inquiry" },
+      { name: "Phase 2 Final Report (Apr 2023)", url: "https://www.gov.uk/government/news/microsoft-activision-deal-prevented-to-protect-innovation-and-choice-in-cloud-gaming" },
+      { name: "Restructured Deal Approval (Oct 2023)", url: "https://www.gov.uk/cma-cases/microsoft-slash-activision-blizzard-ex-cloud-streaming-rights-merger-inquiry" },
     ],
     notes:
       "High-profile example of a competition authority successfully forcing deal restructuring. The CMA required Microsoft to divest cloud streaming rights for Activision games to Ubisoft for 15 years.",
@@ -259,7 +259,7 @@ const cases = [
       "Degradation of seller and consumer experience to extract rents",
     ],
     keyDates: [
-      { date: "2023-09-26", event: "FTC and 17 states file complaint (W.D. Wash.)" },
+      { date: "2023-09-26", event: "FTC and 17 states file complaint (W.D. Wash.)", url: "https://www.ftc.gov/news-events/news/press-releases/2023/09/ftc-sues-amazon-illegally-maintaining-monopoly-power" },
       { date: "2024-10-00", event: "Motion to dismiss largely denied" },
     ],
     nextSteps: [
@@ -272,7 +272,7 @@ const cases = [
         date: null,
       },
     ],
-    documents: ["Complaint (Sep 2023) — partially redacted"],
+    documents: [{ name: "Complaint (Sep 2023) — partially redacted", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/1910129-1910130-amazoncom-inc-amazon-ecommerce" }],
     notes:
       "Key allegations center on Amazon's pricing algorithms and the coercive dynamics of its marketplace ecosystem. Significant portions of the complaint were initially redacted.",
   },
@@ -293,14 +293,14 @@ const cases = [
     ],
     keyDates: [
       { date: "2015-04-15", event: "Formal investigation opened" },
-      { date: "2018-07-18", event: "Commission issues €4.34B fine" },
+      { date: "2018-07-18", event: "Commission issues €4.34B fine", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_18_4581" },
       { date: "2022-09-14", event: "General Court reduces fine to €4.125B" },
       { date: "2024-09-00", event: "CJEU appeal proceedings" },
     ],
     nextSteps: [],
     documents: [
-      "Commission Decision (Jul 2018)",
-      "General Court Judgment (Sep 2022)",
+      { name: "Commission Decision (Jul 2018)", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_18_4581" },
+      { name: "General Court Judgment (Sep 2022)" },
     ],
     notes:
       "The largest EU antitrust fine at the time. Google changed its Android licensing model in Europe to offer a paid license for devices without Google apps.",
@@ -321,8 +321,8 @@ const cases = [
       "Restrictions on app developers steering users to alternative payment",
     ],
     keyDates: [
-      { date: "2024-03-07", event: "DMA obligations take effect for Apple" },
-      { date: "2024-06-24", event: "Commission opens non-compliance proceedings" },
+      { date: "2024-03-07", event: "DMA obligations take effect for Apple", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_1689" },
+      { date: "2024-06-24", event: "Commission opens non-compliance proceedings", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_3433" },
       { date: "2024-11-00", event: "Preliminary findings on App Store steering rules" },
     ],
     nextSteps: [
@@ -335,7 +335,7 @@ const cases = [
         date: null,
       },
     ],
-    documents: ["Preliminary Findings (Nov 2024)"],
+    documents: [{ name: "Preliminary Findings (Nov 2024)", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_3433" }],
     notes:
       "First major enforcement action under the Digital Markets Act. Apple has modified its terms several times in response to DMA requirements but the Commission considers them insufficient.",
   },
@@ -355,7 +355,7 @@ const cases = [
       "Self-preferencing in search results",
     ],
     keyDates: [
-      { date: "2023-10-23", event: "JFTC confirms investigation" },
+      { date: "2023-10-23", event: "JFTC confirms investigation", url: "https://www.jftc.go.jp/en/pressreleases/yearly-2023/October/231023.html" },
       { date: "2024-04-00", event: "JFTC issues report on digital advertising" },
     ],
     nextSteps: [
@@ -364,7 +364,7 @@ const cases = [
         date: null,
       },
     ],
-    documents: ["JFTC Digital Advertising Report (2024)"],
+    documents: [{ name: "JFTC Digital Advertising Report (2024)" }],
     notes:
       "Part of a broader trend of Asian competition authorities scrutinizing big tech. South Korea's KFTC has pursued similar investigations.",
   },
@@ -385,8 +385,8 @@ const cases = [
     ],
     keyDates: [
       { date: "2019-06-01", event: "Formal investigation opened" },
-      { date: "2022-12-19", event: "Statement of Objections issued" },
-      { date: "2024-11-00", event: "Commission issues preliminary decision" },
+      { date: "2022-12-19", event: "Statement of Objections issued", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_22_7728" },
+      { date: "2024-11-00", event: "Commission issues preliminary decision", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_24_5801" },
     ],
     nextSteps: [
       {
@@ -394,7 +394,7 @@ const cases = [
         date: "2025-06-01",
       },
     ],
-    documents: ["Statement of Objections (Dec 2022)"],
+    documents: [{ name: "Statement of Objections (Dec 2022)", url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_22_7728" }],
     notes:
       "Focus is on data advantages and tying in a market (classified ads) where Meta competes with entrenched players like eBay Kleinanzeigen and others.",
   },

@@ -1,3 +1,5 @@
+import { ExternalLink } from "lucide-react";
+
 function formatDate(dateStr) {
   if (!dateStr) return "";
   const cleaned = dateStr.replace(/-00/g, "-01");
@@ -22,7 +24,19 @@ function Timeline({ events }) {
             </div>
             <div className="timeline-content">
               <span className="timeline-date">{formatDate(ev.date)}</span>
-              <span className="timeline-event">{ev.event}</span>
+              {ev.url ? (
+                <a
+                  href={ev.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="timeline-event timeline-link"
+                >
+                  {ev.event}
+                  <ExternalLink size={12} />
+                </a>
+              ) : (
+                <span className="timeline-event">{ev.event}</span>
+              )}
             </div>
           </div>
         );
