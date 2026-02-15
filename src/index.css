@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color palette — professional, muted blues/grays */
+  --color-bg: #f5f6f8;
+  --color-surface: #ffffff;
+  --color-border: #dde1e6;
+  --color-text: #1a1f2b;
+  --color-text-secondary: #5a6170;
+  --color-primary: #1a5276;
+  --color-primary-light: #2471a3;
+  --color-accent: #c0392b;
+  --color-accent-soft: #fdecea;
+
+  /* Status colors */
+  --status-investigation: #2e86c1;
+  --status-preliminary: #7d3c98;
+  --status-formal: #c0392b;
+  --status-litigation: #d35400;
+  --status-remedies: #27ae60;
+  --status-appeal: #f39c12;
+  --status-closed: #7f8c8d;
+
+  --radius: 8px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
