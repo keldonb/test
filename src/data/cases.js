@@ -398,6 +398,95 @@ const cases = [
     notes:
       "Focus is on data advantages and tying in a market (classified ads) where Meta competes with entrenched players like eBay Kleinanzeigen and others.",
   },
+  {
+    id: 13,
+    company: "Google",
+    title: "Canada Competition Bureau — Google Ad Tech",
+    jurisdiction: "Canada",
+    authority: "Competition Bureau Canada",
+    status: "Litigation",
+    openedDate: "2024-06-28",
+    summary:
+      "The Competition Bureau filed an application before the Competition Tribunal alleging that Google engaged in anticompetitive conduct in online advertising, abusing its dominant position across the ad tech stack to maintain and entrench its dominance.",
+    theoriesOfHarm: [
+      "Abuse of dominant position in online display advertising",
+      "Anticompetitive conduct across the ad tech stack (buy-side, sell-side, and exchange)",
+      "Self-preferencing and tying of ad tech tools",
+      "Restricting competitors' ability to compete effectively in ad tech markets",
+    ],
+    keyDates: [
+      { date: "2024-06-28", event: "Competition Bureau files application with Competition Tribunal", url: "https://www.competitionbureau.gc.ca/eic/site/cb-bc.nsf/eng/04782.html" },
+    ],
+    nextSteps: [
+      {
+        description: "Competition Tribunal proceedings",
+        date: null,
+      },
+      {
+        description: "Bureau seeking order to require Google to sell two of its ad tech tools",
+        date: null,
+      },
+    ],
+    documents: [{ name: "Bureau Application (Jun 2024)", url: "https://www.competitionbureau.gc.ca/eic/site/cb-bc.nsf/eng/04782.html" }],
+    notes:
+      "First major abuse of dominance case by the Bureau targeting big tech ad practices. Parallels the U.S. DOJ ad tech case. The Bureau is seeking a divestiture remedy — a relatively rare ask under Canada's Competition Act.",
+  },
+  {
+    id: 14,
+    company: "Google",
+    title: "Canada Competition Bureau — Google Play Billing",
+    jurisdiction: "Canada",
+    authority: "Competition Bureau Canada",
+    status: "Investigation",
+    openedDate: "2023-12-00",
+    summary:
+      "The Competition Bureau launched an inquiry into Google's conduct related to its Google Play Store billing practices and the restrictions imposed on app developers regarding alternative payment processing.",
+    theoriesOfHarm: [
+      "Imposing mandatory use of Google Play billing for in-app purchases",
+      "Restricting app developers from directing users to alternative payment methods",
+      "Leveraging Play Store dominance to extract excessive commissions",
+    ],
+    keyDates: [
+      { date: "2023-12-01", event: "Bureau confirms investigation into Google Play billing" },
+    ],
+    nextSteps: [
+      {
+        description: "Bureau investigation ongoing — potential application to Competition Tribunal",
+        date: null,
+      },
+    ],
+    documents: [],
+    notes:
+      "Part of a global wave of enforcement against app store payment restrictions. Follows similar actions by the EU, South Korea, and others.",
+  },
+  {
+    id: 15,
+    company: "Amazon",
+    title: "Canada Competition Bureau — Amazon Marketplace",
+    jurisdiction: "Canada",
+    authority: "Competition Bureau Canada",
+    status: "Investigation",
+    openedDate: "2024-03-00",
+    summary:
+      "The Competition Bureau is examining Amazon's marketplace practices in Canada, including potential abuse of its dual role as both a marketplace operator and a competing seller, and the use of seller data to advantage its own products.",
+    theoriesOfHarm: [
+      "Use of third-party seller data to advantage Amazon's private-label products",
+      "Self-preferencing in Buy Box and search rankings",
+      "Exploitative terms imposed on marketplace sellers",
+    ],
+    keyDates: [
+      { date: "2024-03-01", event: "Bureau confirms marketplace practices inquiry" },
+    ],
+    nextSteps: [
+      {
+        description: "Investigation ongoing — market study expected",
+        date: null,
+      },
+    ],
+    documents: [],
+    notes:
+      "Follows a broader pattern of competition authorities worldwide scrutinizing Amazon's dual role as platform operator and competing retailer. Canada's 2024 Competition Act amendments strengthened the Bureau's enforcement toolkit.",
+  },
 ];
 
 // Helper: all unique companies
